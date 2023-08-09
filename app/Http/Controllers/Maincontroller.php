@@ -3,15 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Maincontroller;
 
-class Maincontroller extends Controller
+class MainController extends Controller
 {
-    //
 
-   function index(){
+    function index() {
         return view('index');
-   }
+    }
 
+    function resume () {
 
+        return view('resume');
+    }
+
+    function projects () {
+
+        return view('projects');
+    }
+
+    function contact () {
+
+        return view('contact');
+    }
+    //
 }
